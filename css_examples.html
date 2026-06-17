@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Examples</title>
+
+    <!-- Embedded CSS styles; these styles will only apply to this page; TODO: move this CSS to an external CSS file (best practice) -->
+    <style>
+        /* reset styles */
+        body{
+            /* when setting a value to 0, you do not need to specify the unit of measurement */
+           padding: 0;
+           margin: 0; 
+        }
+
+        /* we are using the header selector - which matches the HTML header section on our page; use the curly braces (above the square brackets) */
+        header{
+            background: linear-gradient(to right, orange 0%, orange 25%, blue 100%);
+            color: whitesmoke;
+            text-align: center;
+            /* you can specify top & bottom and left & right like so: */
+            padding: 20px 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        h1{
+            margin: 0;
+        }
+
+        button{
+            background-color:rgb(237, 40, 14);
+            color: whitesmoke;
+            padding: 8px;
+            font-size: large;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header is a semantic HTML tag - it lets other web developers easily determine that this is the top part of the webpage content;
+     header can have the page title, menu, logo  -->
+    <header>
+        <!-- h1 is the page title - only use 1 h1 tag -->
+         <!-- feel free to use inline styles for testing, just move the style once you are happy with it: 
+           style="color: purple;" -->
+        <h1>Welcome to my awesome CSS demo!</h1>
+        <!-- p - paragraph - descriptive info about the page -->
+        <p>CSS has many cool features</p>
+        <!-- button is a semantic HTML tag for the thing you can click on -->
+        <button>Features</button>
+    </header>
+</body>
+</html>
