@@ -1,0 +1,90 @@
+ /* this would apply to any img located within an article tag (parent)
+        article img{
+            width: 200px;
+        }*/
+
+        body{
+            background-image: url('./images/recipe_bg.jpg');
+            background-size: auto;
+            background-position: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-content{
+            background-color:rgba(143, 46, 46, .7);
+            border-radius: 15px;
+            border: 2px solid rgb(94, 23, 23);;
+        }
+
+        header{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li{
+            display: inline-block;
+        }
+
+        nav a{
+            text-decoration: none;
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a:hover{
+            background-color: rgb(94, 23, 23);
+        }
+
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .flex-column{
+            flex: 1;
+            text-align: center;
+            padding-bottom: 20px;            
+        }
+
+        .flex-column + .flex-column{
+            margin-left: 40px;
+        }
+
+        .recipeImg{
+            width: 200px;
+            border-radius: 15px;
+            border: 2px solid rgb(94, 23, 23);
+        }
+
+        @media (max-width: 768px){
+            .flex-container{
+                flex-direction: column;
+            }
+
+            /* this only adds the margin on the top between our columns */
+            .flex-column + .flex-column{
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            .flex-column{                
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
