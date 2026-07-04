@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rae's Recipes ~ Recipe Details</title>
+
+    <!-- link to the external css file -->
+    <link rel="stylesheet" href="recipe_styles.css">
+
+    <!-- link to another external css file with styles just for this page -->
+    <link rel="stylesheet" href="recipe_detail_styles.css">
+</head>
+<body>
+    <header class="bg-content">
+        <!-- it is a good idea to put the menu in a nav section -->
+        <nav>
+            <ul>
+                <li><a href="recipe_home.html">Home</a></li>
+                <li><a href="recipe_list.html">Recipe List</a></li>
+                <li><a href="recipe_detail.html">Recipe Details</a></li>
+            </ul>
+        </nav>
+
+        <h1>Crusoe Family Taco Recipe</h1>
+    </header>
+
+    <main class="bg-content">
+        <!-- when we want to add tabular data - rows & columns of info - use a table -->
+        <table>
+            <!-- use the caption tags for each table to give context for the table's info -->
+            <caption>Taco Ingredients</caption>
+
+            <!-- tr is the table row tag - include on each row, whether it's data or heading -->
+            <tr>
+                <th scope="col">Ingedient Name</th>
+                <th scope="col">Ingedient Amount</th>
+            </tr>
+            <!-- add data to the table now that we have the headings set up  -->
+            <tr>
+                <!-- td is the table data tag - column / cell -->
+                <td>Ground Turkey</td>
+                <td>2 pounds</td>
+            </tr>
+            <tr>
+                <td>Lettuce</td>
+                <td>3 cups</td>
+            </tr>
+            <tr>
+                <td>Tomatoes</td>
+                <td>4 cups</td>
+            </tr>
+            <tr>
+                <td>Cheese</td>
+                <td>2 pounds</td>
+            </tr>
+            <tr>
+                <td>Sour Cream</td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>Guacamole</td>
+                <td>3 cups</td>
+            </tr>
+            <tr>
+                <td>Salsa</td>
+                <td>2 cups</td>
+            </tr>
+        </table>
+
+        <div class="cooking-directions">
+            <h2>Cooking Directions</h2>
+
+            <p>
+                Cook the ground turkey and mix all of the ingredients together.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

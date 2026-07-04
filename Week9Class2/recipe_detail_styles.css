@@ -1,0 +1,8 @@
+.cooking-directions{
+    text-align: center;
+    background-color: maroon;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(115, 44, 44);
+}
